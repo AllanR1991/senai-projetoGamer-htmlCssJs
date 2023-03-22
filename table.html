@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            text-align: center;
+        }
+        table{
+            width: 50%;
+            margin: 20px auto 0;
+            border: 1px solid black;
+        }
+
+        th{
+            border: 1px solid red;
+            text-align: center;
+        }
+
+        td{
+            border: 2px solid green;
+        }
+
+        td:last-of-type{
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>cadastro de equipes</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>FOTO</th>
+                <th>&nbsp;</th>  
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Allan</td>
+                <td><img src="./assets/icons/iconFotoPerfil-cadastro.svg" alt=""></td>
+                <td><img src="./assets/icons/iconDelete-cadastro.svg" alt=""></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Kamille</td>
+                <td><img src="./assets/icons/iconFotoPerfil-cadastro.svg" alt=""></td>
+                <td><img src="./assets/icons/iconDelete-cadastro.svg" alt=""></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Everton</td>
+                <td><img src="./assets/icons/iconFotoPerfil-cadastro.svg" alt=""></td>
+                <td><img src="./assets/icons/iconDelete-cadastro.svg" alt=""></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="3">Total:</td>
+            <td>Total: </td>
+        </tfoot>
+    </table>
+</body>
+</html>

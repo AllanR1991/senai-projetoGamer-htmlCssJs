@@ -1,0 +1,29 @@
+/* Mobile First */
+.grid-layout {
+    height: 60px;
+}
+
+header{
+    position: relative;
+}
+
+.header-top{
+    display: none;
+}
+
+.header-bottom{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: var(--background-color-principal);
+}
+
+.header-bottom__logo{
+    height: 25px;
+}
+
+.menu{
+    position: fixed;
+    top: 60px;
+    left: 0;
+}

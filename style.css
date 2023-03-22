@@ -1,0 +1,51 @@
+@import url(./css/header.css);
+
+@font-face {
+    font-family: "Inter-Regular-400";
+    font-weight: 400;
+    src: url(./assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+    font-family: "Quicksand-Regular";
+    font-weight: 400;
+    src: url(./assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "TitiliumWeb-Regular-400";
+    src: url(./assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
+}
+
+@font-face {
+    font-family: "TitiliumWeb-Bold-700";
+    src: url(./assets/fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
+}
+
+@font-face {
+    font-family: "TitiliumWeb-Black-900";
+    src: url(./assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
+}
+
+:root{
+    --background-color-principal: #1B1426;
+}
+
+body{
+    background-color: var(--background-color-principal);
+}
+
+.grid-layout{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.alinhamento-row-between-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iconTamanho{
+    height: 30px;
+}
