@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +9,15 @@
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <div class="header-top">
             <div class="grid-layout">
                 <div class="contato">
                     <div class="contato-telefone">
-                        <img class="contato-telefone__icon" src="./assets/icons/iconTelefone.svg" alt="Icone de um telefone.">
+                        <img class="contato-telefone__icon" src="./assets/icons/iconTelefone.svg"
+                            alt="Icone de um telefone.">
                         <p class="contato-telefone__descricao">(11) 0900-1010</p>
                     </div>
                     <div class="contato-email">
@@ -31,22 +34,49 @@
         </div>
         <div class="header-bottom">
             <div class="grid-layout alinhamento-row-between-center">
-                <img class="header-bottom__menu-hamburguer iconTamanho" src="./assets/icons/iconMenuHamburguer.svg" alt="Icone de menu de navegaçao.">
+                <img onclick="exibeMenu();" class="header-bottom__menu-hamburguer iconTamanho" src="./assets/icons/iconMenuHamburguer.svg" alt="Icone de menu de navegaçao.">
                 <img class="header-bottom__logo" src="./assets/images/logotipo-gamer.svg" alt="Logotipo da 'Gamer' escrito gamer com m sendo um controle de playstation.">
-                <nav class="menu">
+                <nav class="menu" id="menu-nav">
                     <ul class="menu-lista">
                         <li class="lista-item"><a href="" class="lista-item__link">Início</a></li>
                         <li class="lista-item"><a href="" class="lista-item__link">Jogadores</a></li>
                         <li class="lista-item"><a href="" class="lista-item__link">Equipes</a></li>
                         <li class="lista-item"><a href="" class="lista-item__link">Notícias</a></li>
-                        <li class="lista-item"><a href="" class="lista-item__link"><img class="contato-telefone__icon" src="./assets/icons/iconTelefone.svg" alt="Icone de um telefone."><p class="contato-telefone__descricao">(11) 0900-1010</p></a></li>
-                        <li class="lista-item"><a href="" class="lista-item__link"><img class="contato-email__icon" src="./assets/icons/iconEmail.svg" alt="Icone de um envelope."><p class="contato-email__descricao">contato@gamer.com.br</p></a></li>
+                        <li class="lista-item"><a href="" class="lista-item__link flex-gap"><img
+                                    class="contato-telefone__icon" src="./assets/icons/iconTelefone.svg"
+                                    alt="Icone de um telefone.">
+                                <p class="contato-telefone__descricao">(11) 0900-1010</p>
+                            </a></li>
+                        <li class="lista-item"><a href="" class="lista-item__link flex-gap"><img
+                                    class="contato-email__icon" src="./assets/icons/iconEmail.svg"
+                                    alt="Icone de um envelope.">
+                                <p class="contato-email__descricao">contato@gamer.com.br</p>
+                            </a></li>
                     </ul>
+                    <div class="redes-sociais">
+                        <img class="redes-sociais__icon" src="./assets/icons/iconFacebook.svg" alt="Icone do focebook">
+                        <img class="redes-sociais__icon" src="./assets/icons/iconLinkedIn.svg" alt="Icone do LinkedIn">
+                        <img class="redes-sociais__icon" src="./assets/icons/iconInstagram.svg" alt="Icone do Instagram">
+                    </div>
                 </nav>
-                <img class="header-bottom__menu-opcoes iconTamanho" src="./assets/icons/iconMenuMaisOpcoes.svg" alt="Icone de menu para acessar opções do usuario.">
+                <img onclick="exibeMenuOpcoes();" class="header-bottom__menu-opcoes iconTamanho" src="./assets/icons/iconMenuMaisOpcoes.svg" alt="Icone de menu para acessar opções do usuário.">
+                <div class="header-bottom__icon-opcoes" id="menu-opcoes">
+                    <a href="#">
+                        <img src="./assets/icons/iconPerfil.svg" alt="Icone para acessar o perfil do usuário">
+                    </a>
+                    <a href="#">
+                        <img src="./assets/icons/iconCompras.svg" alt="Icone para acessar compras do usuário">
+                    </a>
+                    <a href="#">
+                        <img src="./assets/icons/iconPesquisa.svg" alt="Icone para pesquisar dentro do site.">
+                    </a>
+
+                </div>
             </div>
         </div>
     </header>
-    
+
+    <script src="./js/exibe_menu.js"></script>
 </body>
+
 </html>

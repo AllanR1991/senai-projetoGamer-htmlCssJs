@@ -28,16 +28,25 @@
 }
 
 :root{
+    --font-primeira: "Quicksand-Regular";
+    --font-segunda: "TitiliumWeb-Regular-400";
+    --font-terceira: "TitiliumWeb-Bold-700";
+    --font-quarta: "TitiliumWeb-Black-900";
+    --font-quinta: "Inter-Regular-400";
+    --text-color-principal: #fff;
+    --color-principal: #F9AA01;
     --background-color-principal: #1B1426;
 }
 
 body{
-    background-color: var(--background-color-principal);
+    background-color: rgb(9, 85, 148);
+    /* background-color: var(--background-color-principal); */
 }
 
 .grid-layout{
+    margin: 0 auto; 
     width: 90%;
-    margin: 0 auto;
+    height: 100%;
 }
 
 .alinhamento-row-between-center{
@@ -46,6 +55,17 @@ body{
     align-items: center;
 }
 
-.iconTamanho{
-    height: 30px;
+.exibe-menu-nav{
+    opacity: 1;
+    left: 0;
+}
+.exibe-menu-opcoes{
+    opacity: 1;
+    right: 0 ;
+}
+
+.flex-gap{
+    display: flex;
+    align-items: center;
+    gap:15px
 }
