@@ -1,7 +1,11 @@
 /* Mobile First */
 header{
-    position: relative;
+    /* è necessario o fixed no header para não ter problema com o menuMaisOpcoes */
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100vw;
+    background-color: var(--background-color-principal);
 }
 
 .header-top{
@@ -11,7 +15,7 @@ header{
 .header-bottom{
     width: 100%;
     height: 60px;
-    background-color: var(--background-color-principal);
+    
 }
 
 .header-bottom__logo{
@@ -32,8 +36,9 @@ header{
     min-width:230px;
     height: 605px;
     background: linear-gradient(to right bottom, #1B1426 0%, rgba(27, 20, 38, 0.7) 0.01%, rgba(27, 20, 38, 0.4) 99.03%);
-    -webkit-backdrop-filter: blur(45px);
+    backdrop-filter: blur(45px);
     border-radius: 0 0 8px 0;
+
     opacity: 0;
     transition: all 0.5s ease-in-out;
     
@@ -62,9 +67,12 @@ header{
 .lista-item__link{
     text-decoration: none;
     font-family: var(--font-quinta);
-    font-size:calc((15/16)*1em);
     color: var(--text-color-principal);
+    font-size:calc((15/16)*1em);
+}
 
+.lista-item__link:hover{
+    color: var(--color-principal);
 }
 
 .redes-sociais{
@@ -85,11 +93,121 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    gap:30px;
 
     background-image: linear-gradient(to left bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
     backdrop-filter: blur(45px);
-
     opacity: 0;
-    transition: right 0.5s ease-in-out;
+    transition: right 0.5s, opacity 0.5s ;
+}
+
+@media screen and (min-width:834px){
+    header{
+        position: static;
+    }
+
+    .header-top{
+        display: block;
+        height: 49.3px;
+    }
+    .contato{
+        display: flex;
+        gap: 54px;
+    }
+
+    .contato p{
+        font-size: calc((10/16)*1em);;
+        color: var(--text-color-principal);
+    }
+
+    .contato a{
+        text-decoration: none;
+    }
+
+    .redes-sociais{
+        margin: 0;
+    }
+
+    .header-bottom{
+        height: 90.7px;
+    }
+
+    .header-bottom__menu-hamburguer{
+        display: none;
+    }
+
+    .header-bottom__logo{
+        height: 44px;
+    }
+
+    .menu{
+        position: static;
+        display: initial;
+        width: initial;
+        min-width: initial;
+        height: initial;
+        backdrop-filter: initial;
+        opacity: initial;
+        background: none;
+        border-radius: initial;
+        transition: initial;
+    }
+
+    .menu-lista{
+        width: initial;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 46px;
+    }
+
+    nav .redes-sociais{
+        display: none;
+    }
+
+    .lista-item{
+        display: initial;
+        height: initial;
+        padding: initial;
+        border: none;
+    }
+
+    .lista-item__link{
+        font-size: calc((10/16)*1em);
+    }
+
+    .menu-lista .flex-gap{
+        display: none;
+    }
+
+    .header-bottom__menu-opcoes{
+        display: none;
+    }
+
+    .header-bottom__contato{
+        display: none;
+    }
+
+    .header-bottom__icon-opcoes{
+        position: static;
+        width: initial;
+        padding: initial;
+        transition: none;
+        opacity: initial;
+        flex-direction: initial;
+        background-image: initial;
+        backdrop-filter: initial;
+    }
+}
+
+@media screen and (min-width:1440px){
+    .contato p{
+        font-size: calc((14/16)*1em);;
+    }
+    .header-bottom__logo{
+        height: 55.21px;
+    }
+    .lista-item__link{
+        font-size: calc((14/16)*1em);
+    }
 }

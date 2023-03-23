@@ -40,6 +40,7 @@
 
 body{
     background-color: rgb(9, 85, 148);
+    color: var(--text-color-principal);
     /* background-color: var(--background-color-principal); */
 }
 
