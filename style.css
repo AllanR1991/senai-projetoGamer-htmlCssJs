@@ -47,7 +47,10 @@ body{
     
     color: var(--text-color-principal);
     background-color: var(--background-color-principal);
+    
 }
+
+
 
 .grid-layout{
     margin: 0 auto; 
@@ -81,3 +84,4 @@ body{
     align-items: center;
     justify-content: center;
 }
+
