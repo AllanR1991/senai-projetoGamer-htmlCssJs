@@ -1,5 +1,7 @@
 @import url(./css/header.css);
 @import url(./css/sectionBannerPrincipal.css);
+@import url(./css/sectionDivulgacao.css);
+@import url(./css/sectionDestaque.css);
 
 @font-face {
     font-family: "Inter-Regular-400";
@@ -35,14 +37,16 @@
     --font-quarta: "TitiliumWeb-Black-900";
     --font-quinta: "Inter-Regular-400";
     --text-color-principal: #fff;
+
     --color-principal: #F9AA01;
+    --color-segunda: #000;
     --background-color-principal: #1B1426;
 }
 
 body{
-    background-color: rgb(9, 85, 148);
+    
     color: var(--text-color-principal);
-    /* background-color: var(--background-color-principal); */
+    background-color: var(--background-color-principal);
 }
 
 .grid-layout{
@@ -70,4 +74,10 @@ body{
     display: flex;
     align-items: center;
     gap:15px
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
