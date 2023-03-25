@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 10px;
+    width: 100%;
 }
 
 .footer-sobre img{
@@ -25,11 +26,13 @@
 
 /*Links Uteis*/
 
-.footer-links, .footer-contatos {
+
+
+.footer-links, .footer-contatos, .footer-newsletter {
     display: flex;
     flex-direction: column;
     gap: 43.08px;
-
+    width: 100%;
 }
 
 .contato-subtitulo{
@@ -77,4 +80,12 @@
     font-family: var(--font-terceira);
     font-size: calc((16/16)*1em);
     color: var(--text-color-principal);
+}
+
+/*Newsletter*/
+
+.footer-newsletter input{
+    width: 100%;
+    border-radius: 8px;
+    
 }
