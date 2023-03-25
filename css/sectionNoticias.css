@@ -1,0 +1,109 @@
+.noticias{
+    background-image: url(../assets/images/backgrund_notícias.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.noticias::before{
+    content: "";
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(119.63deg, rgba(45, 24, 77, 0) 0%, rgba(27, 20, 38, 0.55) 99.45%);
+    backdrop-filter: blur(4px);
+}   
+
+.noticias-titulo{
+    z-index: 1;
+    text-align: center;
+    padding-top: 46px;
+    margin-bottom: 35px;
+    font-family: var(--font-quarta);
+    font-size: calc((18/16)*1em);
+    
+}
+.noticias-sublinhado{
+    z-index: 1;
+    width: 204px;
+    margin-bottom: 118px;
+}
+
+.noticias__alinhamento{
+    zoom: 85%;
+    padding-bottom: 31px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 46px;
+}
+
+.card-noticia{
+    
+    width: 335px;
+    height: 387px;
+    border-radius: 8px;
+    background: linear-gradient(141.58deg, rgba(37, 26, 52, 0.34) 0%, rgba(5, 1, 12, 0.79) 98.48%);
+    backdrop-filter: blur(3px);
+    border-radius: 8px;
+}
+
+.card-noticia__img{
+    width: 100%;
+    height: 174px;
+}
+
+.card-noticia__alinhamento{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 25.86px 21px 25.86px;
+}
+
+.card-noticia__titulo{
+    font-family: var(--font-terceira);
+    font-size: calc((24/16)*1em);
+}
+
+.card-noticia__descricao{
+    width: 283.28px;
+    height: 123px;
+    font-family: var(--font-primeira);
+    font-size: calc((16/16)*1em);
+    text-align: justify;
+    overflow: hidden;
+}
+
+@media screen and (min-width:834px){
+    .noticias{
+        background-image: url(../assets/images/backgrund_notícias-tablet.png);
+        
+    }
+
+    .noticias-titulo{
+        font-size: calc((40/16)*1em);
+    }
+
+    .noticias__alinhamento{
+        padding-bottom: 161px;
+        zoom: 108%;
+        width: 694.99px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 47px 20px;
+    }
+}
+
+@media screen and (min-width:1440px){
+    .noticias{
+        background-image: url(../assets/images/backgrund_notícias-desktop.png);
+        
+    }
+
+    .noticias__alinhamento{
+        zoom: 92%;
+        width: 1408.7px;
+        gap: 62px 20px;
+}

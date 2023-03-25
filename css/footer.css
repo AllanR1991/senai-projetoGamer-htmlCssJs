@@ -1,0 +1,80 @@
+/* Sobre */
+
+.footer-sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.footer-sobre img{
+    height: 32px;
+}
+
+.footer-sobre p{
+    font-family: var(--font-primeira);
+    font-size: calc((14/16)*1em);
+    text-align: justify;
+}
+
+.footer__redes-sociais{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*Links Uteis*/
+
+.footer-links, .footer-contatos {
+    display: flex;
+    flex-direction: column;
+    gap: 43.08px;
+
+}
+
+.contato-subtitulo{
+    font-family: var(--font-quarta);
+    font-size: calc((30/16)*1em);
+}
+
+.contato-sublinhado{
+    margin: 0;
+    width: 114px;
+    border: 1px solid var(--color-principal);
+}
+
+.footer-links ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links li{
+    width: 104px;
+}
+
+.footer-links a{
+    text-decoration: none;
+    font-family: var(--font-terceira);
+    font-size: calc((16/16)*1em);
+    color: var(--text-color-principal);
+}
+
+.footer-links a::before{
+    content: "\2014 ";
+    color: var(--color-principal);
+    margin-right: 5px;
+}
+
+/* Contatos */
+
+.footer-contatos__subtitulo{
+    font-family: var(--font-terceira);
+    font-size: calc((16/16)*1em);
+    color: var(--color-principal);
+}
+
+.footer-contatos{
+    font-family: var(--font-terceira);
+    font-size: calc((16/16)*1em);
+    color: var(--text-color-principal);
+}

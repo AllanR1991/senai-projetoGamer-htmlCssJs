@@ -34,7 +34,7 @@
     
     width: 336px;
     height: 511px;
-    zoom: 95%;
+    zoom: 85%;
 }
 
 .grid-space2{
@@ -42,7 +42,7 @@
 
     display: flex;
     justify-content: flex-end;
-    zoom: 95%;
+    zoom: 85%;
     height: 511px;
 }
 
@@ -122,9 +122,6 @@
     .grid-space2{
         zoom: 120%;
     }
-
-    
-
     
 }
 

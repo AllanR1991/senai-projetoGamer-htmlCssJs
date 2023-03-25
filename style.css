@@ -2,6 +2,9 @@
 @import url(./css/sectionBannerPrincipal.css);
 @import url(./css/sectionDivulgacao.css);
 @import url(./css/sectionDestaque.css);
+@import url(./css/sectionNoticias.css);
+@import url(./css/footer.css);
+
 
 @font-face {
     font-family: "Inter-Regular-400";
@@ -53,6 +56,7 @@ body{
 
 
 .grid-layout{
+    max-width: 1440px;
     margin: 0 auto; 
     width: 90%;
     height: 100%;
@@ -85,3 +89,12 @@ body{
     justify-content: center;
 }
 
+.flex-colum-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.height-container{
+    height: 300px;
+}
