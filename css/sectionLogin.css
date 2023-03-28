@@ -1,8 +1,20 @@
 .login {
+    position: relative;
     background-image: url(../assets/images/banner_login.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 78px 20px 147px 20px;
+    /* padding: 78px 20px 147px 20px; */
+    overflow: auto; /*No caso do colapso de margens, definir overflow: auto no elemento pai pode impedir que as margens do elemento filho colapsem com as margens do elemento pai.*/
+}
+
+.login::before {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    background: linear-gradient(180deg, #0E0915 2%, rgba(67, 3, 99, 0.1) 12%),linear-gradient(0deg, #0E0915 0, rgba(67, 3, 99,0) 0),linear-gradient(0deg, #0E0915 1.51%, rgba(67, 3, 99, 0.03) 9%);
+    width: 100%;
+    backdrop-filter: blur(4px);
+    height: 100%;
 }
 
 .login__titulo{
@@ -10,9 +22,12 @@
     margin-bottom: 90px;
     font-family: var(--font-quarta);
     font-size:calc((28/16)*1em);
+    text-transform: uppercase;
 }
 
 .borda-card-login{
+    margin-top: 78px ;
+    margin-bottom: 147px;
     width: 100%;
     border: 3px solid;
     border-image: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0)) 1;
@@ -30,6 +45,11 @@
     flex-direction: column;
     align-items: center;
 }
+
+.login-container div{
+    width: 80%;
+}
+
 
 .login-container input{
     width: 100%;
@@ -55,4 +75,24 @@
 .login__button{
     margin-top: 56px;
     margin-bottom: 76px;
+    width: 80%;
+    height: 40px;
+    background-color: var(--color-principal);
+    border-radius: 8px;
+    border: none;
+    font-family: var(--font-terceira);
+    font-size: calc((24/16)*1em);
+    color: var(--background-color-principal);
+}
+
+@media screen and (min-width:834px){
+    .login {
+        background-image: url(../assets/images/banner_login-tablet.png);    
+    }
+}
+
+@media screen and (min-width:1440px){
+    .login {
+        background-image: url(../assets/images/banner_login-desktop.png);    
+    }
 }
