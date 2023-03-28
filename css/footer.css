@@ -1,24 +1,53 @@
 /* Sobre */
 
-.footer-sobre{
+footer {
+    position: relative;
+    padding-top: 106px;
+    background-image: url(../assets/images/backgroung_footer-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+
+footer::before {
+    position: absolute;
+    top: 0;
+    content: "";
+    background: linear-gradient(180deg, #0E0915 21.51%, rgba(67, 3, 99, 0.03) 100%);
+    width: 100%;
+    height: 116px;
+}
+
+.footer-container-gradient-superior{
+    position: relative;
+}
+
+.foote-flex-colum-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-sobre {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 10px;
-    width: 100%;
+    width: 313.19px;
 }
 
-.footer-sobre img{
+.footer-sobre img {
     height: 32px;
 }
 
-.footer-sobre p{
+.footer-sobre p {
     font-family: var(--font-primeira);
     font-size: calc((14/16)*1em);
     text-align: justify;
 }
 
-.footer__redes-sociais{
+.footer__redes-sociais {
     display: flex;
     justify-content: space-between;
 }
@@ -28,41 +57,43 @@
 
 
 
-.footer-links, .footer-contatos, .footer-newsletter {
+.footer-links,
+.footer-contatos,
+.footer-newsletter {
     display: flex;
     flex-direction: column;
     gap: 43.08px;
-    width: 100%;
+    width: 313.19px;
 }
 
-.contato-subtitulo{
+.contato-subtitulo {
     font-family: var(--font-quarta);
     font-size: calc((30/16)*1em);
 }
 
-.contato-sublinhado{
+.contato-sublinhado {
     margin: 0;
     width: 114px;
     border: 1px solid var(--color-principal);
 }
 
-.footer-links ul{
+.footer-links ul {
     display: flex;
     flex-wrap: wrap;
 }
 
-.footer-links li{
+.footer-links li {
     width: 104px;
 }
 
-.footer-links a{
+.footer-links a {
     text-decoration: none;
     font-family: var(--font-terceira);
     font-size: calc((16/16)*1em);
     color: var(--text-color-principal);
 }
 
-.footer-links a::before{
+.footer-links a::before {
     content: "\2014 ";
     color: var(--color-principal);
     margin-right: 5px;
@@ -70,13 +101,13 @@
 
 /* Contatos */
 
-.footer-contatos__subtitulo{
+.footer-contatos__subtitulo {
     font-family: var(--font-terceira);
     font-size: calc((16/16)*1em);
     color: var(--color-principal);
 }
 
-.footer-contatos{
+.footer-contatos {
     font-family: var(--font-terceira);
     font-size: calc((16/16)*1em);
     color: var(--text-color-principal);
@@ -84,8 +115,98 @@
 
 /*Newsletter*/
 
-.footer-newsletter input{
+.input-gradient {
+    box-sizing: content-box;
+    height: 40px;
+    position: relative;
+    border: 3px solid;
+    border-image: linear-gradient(90deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)) 1;
+    background: linear-gradient(90deg, rgba(239, 239, 239, 0.6), rgba(239, 239, 239, 0));
+    -webkit-clip-path: inset(0px round 8px);
+    clip-path: inset(0px round 8px);
+    border-radius: 0px;
+    padding: 0px;
+    background-clip: padding-box;
+    backdrop-filter: blur(3px);
+}
+
+.footer-newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.footer-newsletter form input {
     width: 100%;
+    height: 40px;
+    background-color: transparent;
+    border: transparent;
+    color: var(--text-color-principal);
+    padding-left: 17.53px;
+
+}
+
+.footer-newsletter form input::placeholder {
+    color: var(--text-color-principal);
+}
+
+.footer-newsletter form input:focus {
+   outline: none;
+}
+
+
+
+.footer-newsletter form button {
+    background-color: var(--color-principal);
+    border: none;
+    width: 100%;
+    height: 40px;
     border-radius: 8px;
+    color: var(--background-color-principal);
+    font-family: var(--font-terceira);
+    font-size: calc((24/16)*1em);
+    text-align: center;
+}
+
+footer>p {
+    text-align: center;
+    padding: 45px;
+    font-family: var(--font-segunda);
+    font-size: calc((16/16)*1em);
+}
+
+@media screen and (min-width:834px) {
+    footer {
+        background-image: url(../assets/images/backgroung_footer-tablet.png);
+
+    }
+
+    .foote-flex-colum-center {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 47px 20px;
+    }
+
+    .footer__redes-sociais {
+        justify-content: flex-start;
+        gap: 56px;
+    }
+
+    .footer-links ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    footer {
+        background-image: url(../assets/images/backgroung_footer-desktop.png);
+
+    }
     
+    .foote-flex-colum-center {
+        flex-wrap: nowrap;
+    }
 }

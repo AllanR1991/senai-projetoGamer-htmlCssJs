@@ -1,0 +1,58 @@
+.login {
+    background-image: url(../assets/images/banner_login.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 78px 20px 147px 20px;
+}
+
+.login__titulo{
+    margin-top: 44px;
+    margin-bottom: 90px;
+    font-family: var(--font-quarta);
+    font-size:calc((28/16)*1em);
+}
+
+.borda-card-login{
+    width: 100%;
+    border: 3px solid;
+    border-image: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0)) 1;
+    background: linear-gradient(131deg, rgba(27, 20, 38, 0.6) 0%, rgba(60, 3, 65, 0.38) 98.83%);
+    backdrop-filter: blur(5px);
+    -webkit-clip-path: inset(0px round 8px);
+    clip-path: inset(0px round 7px);
+    border-radius: 0px;
+    padding: 0px;
+    background-clip: padding-box;
+}
+
+.login-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container input{
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    border: transparent;
+    color: var(--text-color-principal);
+    padding-left: 17.53px;
+}
+
+.login-container div:first-of-type{
+    margin-bottom: 40px;
+}
+
+.login-container input::placeholder {
+    color: var(--text-color-principal);
+}
+
+.login__email{
+    margin-bottom: 31px;
+}
+
+.login__button{
+    margin-top: 56px;
+    margin-bottom: 76px;
+}
