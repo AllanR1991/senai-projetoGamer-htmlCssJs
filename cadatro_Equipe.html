@@ -93,17 +93,21 @@
         </div>
     </header>
     <main>
-        <section class="login">
+        <section class="cadastro-equipe">
             <div class="grid-layout flex-center">
                 <!-- <h1 class="login__titulo">Login</h1> -->
-                <div class="borda-card-login">
+                <div class="borda-cadastro">
                     <form action="">
-                        <div class="login-container">
-                            <h1 class="login__titulo">Login</h1>
-                            <div class="input-gradient"><input class="login__email" type="email" name=""                            placeholder="Digite seu e-mail:"></div>
-                            <div class="input-gradient"><input class="login__pass" type="password" name=""
-                                    placeholder="Digite sua senha:"></div>
-                            <button class="login__button" type="submit">Logar</button>
+                        <div class="cadastro-equipes">
+                            <h1 class="cadastro-equipes__titulo">Cadastro de equipes</h1>
+                            <div class="input-gradient"><input class="cadastro-equipes__id-equipe" type="number" name="" placeholder="Digite o Id da sua equipe:"></div>
+                            <div class="input-gradient"><input class="cadastro-equipes__nome-equipe" type="text" name="" placeholder="Digite o nome da sua equipe:"></div>
+
+                            <label for="image_uploads">Escolha imagens para upload (.jpg ,.png ,.jpeg ,.svg)</label>
+                            <input id="image_uploads" name="image_uploads" type="file" accept=".jpg, .png, .jpeg, .svg"/>
+                        </div>
+                        <div class="preview">
+                            <p>Nenhum arquivo atualmente selecionado para upload</p>
                         </div>
                     </form>
                 </div>
@@ -171,7 +175,7 @@
 
 
     </footer>
-
+    <script src="./js/imageDisplay.js"></script>
     <script src="./js/exibe_menu.js"></script>
 </body>
 

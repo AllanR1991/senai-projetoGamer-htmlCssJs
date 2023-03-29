@@ -4,29 +4,31 @@
     background-repeat: no-repeat;
     background-size: cover;
     /* padding: 78px 20px 147px 20px; */
-    overflow: auto; /*No caso do colapso de margens, definir overflow: auto no elemento pai pode impedir que as margens do elemento filho colapsem com as margens do elemento pai.*/
+    overflow: auto;
+    /*No caso do colapso de margens, definir overflow: auto no elemento pai pode impedir que as margens do elemento filho colapsem com as margens do elemento pai.*/
 }
 
 .login::before {
     position: absolute;
     bottom: 0;
     content: "";
-    background: linear-gradient(180deg, #0E0915 2%, rgba(67, 3, 99, 0.1) 12%),linear-gradient(0deg, #0E0915 0, rgba(67, 3, 99,0) 0),linear-gradient(0deg, #0E0915 1.51%, rgba(67, 3, 99, 0.03) 9%);
+    background: linear-gradient(180deg, #0E0915 3%, rgba(67, 3, 99, 0.1) 16%), linear-gradient(0deg, #0E0915 0, rgba(67, 3, 99, 0) 6%), linear-gradient(0deg, #0E0915 5.51%, rgba(67, 3, 99, 0.03) 13%);
     width: 100%;
     backdrop-filter: blur(4px);
     height: 100%;
 }
 
-.login__titulo{
+
+.login__titulo {
     margin-top: 44px;
     margin-bottom: 90px;
     font-family: var(--font-quarta);
-    font-size:calc((28/16)*1em);
+    font-size: calc((28/16)*1em);
     text-transform: uppercase;
 }
 
-.borda-card-login{
-    margin-top: 78px ;
+.borda-card-login {
+    margin-top: 78px;
     margin-bottom: 147px;
     width: 100%;
     border: 3px solid;
@@ -40,18 +42,18 @@
     background-clip: padding-box;
 }
 
-.login-container{
+.login-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.login-container div{
+.login-container div {
     width: 80%;
 }
 
 
-.login-container input{
+.login-container input {
     width: 100%;
     height: 40px;
     background-color: transparent;
@@ -60,7 +62,7 @@
     padding-left: 17.53px;
 }
 
-.login-container div:first-of-type{
+.login-container div:first-of-type {
     margin-bottom: 40px;
 }
 
@@ -68,11 +70,11 @@
     color: var(--text-color-principal);
 }
 
-.login__email{
+.login__email {
     margin-bottom: 31px;
 }
 
-.login__button{
+.login__button {
     margin-top: 56px;
     margin-bottom: 76px;
     width: 80%;
@@ -85,14 +87,21 @@
     color: var(--background-color-principal);
 }
 
-@media screen and (min-width:834px){
+@media screen and (min-width:834px) {
     .login {
-        background-image: url(../assets/images/banner_login-tablet.png);    
+        background-image: url(../assets/images/banner_login-tablet.png);
+    }
+    .borda-card-login {
+        max-width: 800px;
     }
 }
 
-@media screen and (min-width:1440px){
+@media screen and (min-width:1440px) {
     .login {
-        background-image: url(../assets/images/banner_login-desktop.png);    
+        background-image: url(../assets/images/banner_login-desktop.png);
+    }
+
+    .borda-card-login {
+        max-width: 800px;
     }
 }
