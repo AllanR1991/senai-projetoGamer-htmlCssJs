@@ -94,23 +94,76 @@
     </header>
     <main>
         <section class="cadastro-equipe">
-            <div class="grid-layout flex-center">
+            <div class="grid-layout flex-colum-center">
                 <!-- <h1 class="login__titulo">Login</h1> -->
                 <div class="borda-cadastro">
                     <form action="">
                         <div class="cadastro-equipes">
-                            <h1 class="cadastro-equipes__titulo">Cadastro de equipes</h1>
-                            <div class="input-gradient"><input class="cadastro-equipes__id-equipe" type="number" name="" placeholder="Digite o Id da sua equipe:"></div>
-                            <div class="input-gradient"><input class="cadastro-equipes__nome-equipe" type="text" name="" placeholder="Digite o nome da sua equipe:"></div>
+                            <div class="container__titulo">
+                                <h1 class="cadastro-equipes__titulo">Cadastro de equipes</h1>
+                                <hr>
+                            </div>
 
-                            <label for="image_uploads">Escolha imagens para upload (.jpg ,.png ,.jpeg ,.svg)</label>
-                            <input id="image_uploads" name="image_uploads" type="file" accept=".jpg, .png, .jpeg, .svg"/>
+                            <div class="container-input">
+                                <div class="input-gradient"><input class="cadastro-equipes__id-equipe" type="number"
+                                        name="" placeholder="Digite o Id da sua equipe:"></div>
+                                <div class="input-gradient"><input class="cadastro-equipes__nome-equipe" type="text"
+                                        name="" placeholder="Digite o nome da sua equipe:"></div>
+
+                                <div class="container__select-image">
+                                    <label for="image_uploads" class="botao__input-imagem">Imagem da Equipe</label>
+                                    <input id="image_uploads" name="image_uploads" type="file"
+                                        accept=".jpg, .png, .jpeg, .svg" style="display: none;" />
+                                    <div class="preview">
+                                        <!-- <p>Nenhum arquivo atualmente selecionado para upload</p> -->
+                                    </div>
+                                </div>
+                                <button type="submit">Cadastro</button>
+                            </div>
                         </div>
-                        <div class="preview">
-                            <p>Nenhum arquivo atualmente selecionado para upload</p>
-                        </div>
+
                     </form>
+
+
                 </div>
+
+                <table class="table-cadasto-equipe">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nome</th>
+                            <th>Foto</th>
+                            <th> </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2</td>
+                            <td>Carlos</td>
+                            <td><img src="" alt=""></td>
+                            <td><img src="" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Eduardo</td>
+                            <td><img src="" alt=""></td>
+                            <td><img src="" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Jackson</td>
+                            <td><img src="" alt=""></td>
+                            <td><img src="" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Jne</td>
+                            <td><img src="" alt=""></td>
+                            <td><img src="" alt=""></td>
+                        </tr>
+                    </tbody>
+                </table>
+
             </div>
         </section>
     </main>

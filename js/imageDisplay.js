@@ -13,7 +13,7 @@ function updateImageDisplay() {
     const curFiles = input.files;
     if (curFiles.length === 0) {
       const para = document.createElement('p');
-      para.textContent = 'No files currently selected for upload';
+      para.textContent = 'Nenhum arquivo foi selecionado.';
       preview.appendChild(para);
     } else {
       const list = document.createElement('ol');
@@ -23,14 +23,14 @@ function updateImageDisplay() {
         const listItem = document.createElement('li');
         const para = document.createElement('p');
         if (validFileType(file)) {
-          para.textContent = `File name ${file.name}, file size ${returnFileSize(file.size)}.`;
+          // para.textContent = `File name ${file.name}, file size ${returnFileSize(file.size)}.`;
           const image = document.createElement('img');
           image.src = URL.createObjectURL(file);
   
           listItem.appendChild(image);
           listItem.appendChild(para);
         } else {
-          para.textContent = `File name ${file.name}: Not a valid file type. Update your selection.`;
+          para.textContent = `O arquivo ${file.name}, não é um tipo de arquivo valido. Favor selecionar outro arquivo de extensão :(.jpg ,.png ,.jpeg ,.svg).`;
           listItem.appendChild(para);
         }
   
