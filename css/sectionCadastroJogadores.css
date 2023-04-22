@@ -1,4 +1,4 @@
-.secao-cadastro-equipe{
+.secao-cadastro-jogadores{
     position: relative;
     background-image: url(../assets/images/banner_cadastro_de_equipe.png);
     background-repeat: no-repeat;
@@ -6,7 +6,7 @@
     background-position: center;
 }
 
-.secao-cadastro-equipe::before {
+.secao-cadastro-jogadores::before {
     position: absolute;
     bottom: 0;
     content: "";
@@ -19,7 +19,7 @@
 .borda-cadastro{
     margin-top: 107px;
     width: 100%;
-    height: 492px;
+    height: 670px;
     border: 3px solid;
     border-image: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0)) 1;
     background: linear-gradient(131deg, rgba(27, 20, 38, 0.6) 0%, rgba(60, 3, 65, 0.38) 98.83%);
@@ -31,13 +31,17 @@
     background-clip: padding-box;
 }
 
-
-.cadastro-equipes{
+.container__titulo{
+    box-sizing: content-box;
+    display: block;
+    width: 100%;
+}
+.cadastro-jogadores{
     padding: 1em;
     
 }
 
-.cadastro-equipes__titulo{
+.cadastro-jogadores__titulo{
     display: inline-block;
     box-sizing: content-box;
     width: 100%;
@@ -54,7 +58,7 @@
     border-style: solid;
 }
 
-.cadastro-equipes__id-equipe{
+.cadastro-jogadorID{
     height: 40px;
     width: 100%;
     border: transparent;
@@ -65,11 +69,11 @@
 
 
 
-.cadastro-equipes__id-equipe::placeholder{
+.cadastro-jogadorID::placeholder{
     color: var(--text-color-principal);
 }
 
-.cadastro-equipes__nome-equipe{
+.cadastro-jogador__selec-time{
     height: 40px;
     width: 100%;
     border: transparent;
@@ -78,7 +82,22 @@
     padding: 1em;
 }
 
-.cadastro-equipes__nome-equipe::placeholder{
+.select-items {
+    background-color: rgb(69, 0, 116);
+}
+
+.input-format-default{
+    height: 40px;
+    width: 100%;
+    border: transparent;
+    background: transparent;
+    color: var(--text-color-principal);
+    padding: 1em;
+}
+
+
+
+.input-format-default::placeholder{
     color: var(--text-color-principal);
 }
 
@@ -87,29 +106,7 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-    padding: 1emz';
-}
-.botao__input-imagem{
-    text-align: center;
-    display: inline-block;
-    background-color: var(--color-terceira);
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid green;
-    width: 40%;
-
-}
-
-.preview img{
-    border: 1px solid white;
-    border-radius: 8px;
-
-    height: 51px;  
-}
-
-.container__select-image{
-    display: flex;
-    justify-content: space-between;
+    padding: 1em;
 }
 
 .container-input button{
@@ -121,7 +118,7 @@
 }
 
 /*Tabela*/
-.table-cadastro-equipe{
+.table-cadastro-jogador{
     margin-top: 80px;
     margin-bottom: 171px;
     width: 100%;
@@ -129,18 +126,18 @@
 
 }
 
-.table-cadastro-equipe thead,.table-cadastro-equipe tbody{
+.table-cadastro-jogador thead,.table-cadastro-jogador tbody{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.table-cadastro-equipe thead tr{
+.table-cadastro-jogador thead tr{
     margin-bottom: 30px;
     border-bottom: 3px solid var(--color-principal);
 }
 
-.table-cadastro-equipe thead th{
+.table-cadastro-jogador thead th{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,13 +149,13 @@
     text-transform: uppercase;
 }
 
-.table-cadastro-equipe tr{
+.table-cadastro-jogador tr{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.table-cadastro-equipe tbody tr{
+.table-cadastro-jogador tbody tr{
     height: 70px;
     margin-bottom: 20px;
     /* efeito da borda e do fundo glass */
@@ -173,7 +170,7 @@
     background-clip: padding-box;
 }
 
-.table-cadastro-equipe td{
+.table-cadastro-jogador td{
     width: 100%;
     height: 38px;
     display: flex;
@@ -182,14 +179,14 @@
     border-right: 2px solid #F9AA01;
 }
 
-.table-cadastro-equipe td:last-of-type {
+.table-cadastro-jogador td:last-of-type {
     border: none;
 }
 
-.table-cadastro-equipe td img.green-play {
+.table-cadastro-jogador td img.green-play {
     width: 25px;
 }
 
-.table-cadastro-equipe td img.yellow-trash {
+.table-cadastro-jogador td img.yellow-trash {
     width: 15px;
 }

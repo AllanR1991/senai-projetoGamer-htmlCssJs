@@ -6,6 +6,7 @@
 @import url(./css/footer.css);
 @import url(./css/sectionLogin.css);
 @import url(./css/sectionCadastroEquipe.css);
+@import url(./css/sectionCadastroJogadores.css);
 
 
 @font-face {
@@ -59,7 +60,7 @@ body{
 
 
 .grid-layout{
-    /* max-width: 1440px; */
+    max-width: 1440px;
     margin: 0 auto; 
     width: 90%;
     height: 100%;

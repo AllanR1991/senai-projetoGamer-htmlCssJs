@@ -94,20 +94,82 @@
         </div>
     </header>
     <main>
-        <section class="login">
-            <div class="grid-layout flex-center">
+        <section class="secao-cadastro-jogadores">
+            <div class="grid-layout flex-colum-center">
                 <!-- <h1 class="login__titulo">Login</h1> -->
-                <div class="borda-card-login">
+                <div class="borda-cadastro">
                     <form action="">
-                        <div class="login-container">
-                            <h1 class="login__titulo">Login</h1>
-                            <div class="input-gradient"><input class="login__email" type="email" name=""                            placeholder="Digite seu e-mail:"></div>
-                            <div class="input-gradient"><input class="login__pass" type="password" name=""
-                                    placeholder="Digite sua senha:"></div>
-                            <button class="login__button" type="submit">Logar</button>
+                        <div class="cadastro-jogadores">
+                            <div class="container__titulo">
+                                <h1 class="cadastro-jogadores__titulo">Cadastro de Jogadores</h1>
+                                <hr>
+                            </div>
+
+                            <div class="container-input">
+                                <div class="input-gradient"><input class="cadastro-jogadorID" type="number"
+                                        name="" placeholder="Digite o Id do Jogador: "></div>
+
+                                <div class="input-gradient"><select class="cadastro-jogador__selec-time"
+                                        name="selecTime" id="">
+                                        <option value="G2 Esports" class="select-items">G2 Esports</option>
+                                        <option value="Heroic" class="select-items">Heroic</option>
+                                        <option value="Team Liquid" class="select-items">Team Liquid</option>
+                                        <option value="FaZe Clan" class="select-items">FaZe Clan</option>
+                                    </select></div>
+
+                                <div class="input-gradient"><input class="input-format-default" type="text"
+                                        name="" placeholder="Digite o nome do jogador:"></div>
+                                <div class="input-gradient"><input class="input-format-default" type="email"
+                                        name="" placeholder="Digite o e-mail do Jogador:"></div>
+                                <div class="input-gradient"><input class="input-format-default" type="password"
+                                        name="" placeholder="Digite uma senha:"></div>
+                                
+                                <button type="submit">Cadastro</button>
+                            </div>
                         </div>
+
                     </form>
+
+
                 </div>
+
+                <table class="table-cadastro-jogador">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nome</th>
+                            <th>E-mail</th>
+                            <th> </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2</td>
+                            <td>Carlos</td>
+                            <td>carlos@gmail.com</td>
+                            <td><img src="" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Eduardo</td>
+                            <td>eduardo@gmail.com</td>
+                            <td><img src="" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Jackson</td>
+                            <td>jackson@gmail.com</td>
+                            <td><img src="" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Jne</td>
+                            <td>jne@gmail.com</td>
+                            <td><img src="" alt=""></td>
+                        </tr>
+                    </tbody>
+                </table>
+
             </div>
         </section>
     </main>
@@ -172,7 +234,7 @@
 
 
     </footer>
-
+    <script src="./js/imageDisplay.js"></script>
     <script src="./js/exibe_menu.js"></script>
 </body>
 
