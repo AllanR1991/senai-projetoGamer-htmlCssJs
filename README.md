@@ -2,7 +2,7 @@
 
 ## Projeto desenvolvido junto com a escola Senai no curso de Desenvolvimento de Software.
 
-Este projeto se iniciou com o desenvolvimento no Figma, realizando protótipo de baixa fidelidade e alta fidelidade que podem ser encontrados [clicando aqui](https://www.figma.com/file/P3Z6b8zTDPnHqzvDTDoUND/ProjetoGamerAllan?node-id=0%3A1&t=QQMxjqAig74uKM0z-1). Após a finalização do Figma chegou a hora de transformar a idealização em realidade através da linguagem de marcação HTML5, linguagem de Estilização CSS, e Linguagem de Programação Java Script.
+Este projeto se iniciou com o desenvolvimento no Figma, realizando protótipo de baixa fidelidade e alta fidelidade que podem ser encontrados [clicando aqui](https://www.figma.com/file/P3Z6b8zTDPnHqzvDTDoUND/ProjetoGamerAllan?node-id=0%3A1&t=QQMxjqAig74uKM0z-1). Após a finalização do Figma chegou a hora de transformar a idealização em realidade através da linguagem de marcação HTML5, linguagem de Estilização CSS, e Linguagem de Programação Java Script, iniciando pela construção de responsividade mobile first para depois tablet e em seguida desktop.
 
 Neste projeto foram utilizados Técnicas de:
 Glassmorphism, Flex Box, Position, HTML Semântico, BEM e um pouco de SMACSS, Trabalho realizado com medidas em %, EM, PX, Box Model entre outras técnicas para atingir o objetivo, inputs.
