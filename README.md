@@ -24,7 +24,7 @@ https://user-images.githubusercontent.com/22855740/233828947-9e5d96d8-115c-4355-
 
 -	Editor de código:
 	-	![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-		Extensões:
+	-	Extensões:
 		-	EsLint.
 		-	Live Server.
 		-	GitLens.
