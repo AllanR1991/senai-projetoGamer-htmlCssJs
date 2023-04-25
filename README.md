@@ -1,5 +1,9 @@
 # Projeto Pro Gamer
 
+-	O mesmo pode ser visualizado em ambas plataformas abaixo:
+	-	[![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)](projeto-gamer-allan-7xga59epg-allanr1991.vercel.app)
+	-	[![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)](https://allanr1991.github.io/projeto-gamer-allan/)
+
 ## Projeto desenvolvido junto com a escola Senai no curso de Desenvolvimento de Software.
 
 Este projeto se iniciou com o desenvolvimento no Figma, realizando protótipo de baixa fidelidade e alta fidelidade que podem ser encontrados [clicando aqui](https://www.figma.com/file/P3Z6b8zTDPnHqzvDTDoUND/ProjetoGamerAllan?node-id=0%3A1&t=QQMxjqAig74uKM0z-1). Após a finalização do Figma chegou a hora de transformar a idealização em realidade através da linguagem de marcação HTML5, linguagem de Estilização CSS, e Linguagem de Programação Java Script, iniciando pela construção de responsividade mobile first para depois tablet e em seguida desktop.
